@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shruti Shinde | High-Performance Software & Website Creation Studio</title>
+  <meta name="description" content="Professional portfolio of Shruti Shinde - Bespoke software engineering, modern high-converting websites, Webflow CMS, SaaS platforms, and interactive 3D digital experiences.">
+  <meta name="keywords" content="Shruti Shinde, software creation, website development, Webflow developer, frontend engineer, 3D web, full stack developer">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shruti Shinde | High-Performance Software & Website Creation Studio">
+  <meta property="og:description" content="Neat, clean, and professional software & website creation for ambitious businesses and brands.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Vendor Scripts (Local with CDN fallback) -->
+  <script src="js/vendor/three.min.js"></script>
+  <script src="js/vendor/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- 3D Interactive Three.js Background Canvas -->
+  <canvas id="three-bg-canvas"></canvas>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <span class="badge-pulse">Available Now</span>
+    <span>Accepting new client software &amp; website development projects for 2026/2027</span>
+    <a href="#contact">Schedule a Strategy Call &rarr;</a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon-box">SS</div>
+        <div class="brand-text">
+          <span class="brand-title">Shruti Shinde</span>
+          <span class="brand-subtitle">Software &amp; Web Studio</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#live-showcase" class="nav-link active">Live Showcase</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#work" class="nav-link">Client Work</a></li>
+          <li><a href="#estimator" class="nav-link">Estimator</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#estimator" class="btn btn-secondary btn-sm">Calculator</a>
+        <a href="#contact" class="btn btn-primary btn-sm btn-glow">Start a Project</a>
+        <button class="mobile-toggle-btn" aria-label="Toggle navigation menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         HERO SECTION WITH SIGNATURE "WEBSITE IN WEBSITE" BOX
+         ======================================================================= -->
+    <section class="hero-section" id="live-showcase">
+      <div class="hero-glow-blob"></div>
+      
+      <div class="container">
+        <!-- Hero Introduction -->
+        <div class="hero-content">
+          <div class="section-badge">
+            <i data-lucide="sparkles"></i> High-Impact Digital Engineering
+          </div>
+          <h1 class="hero-title">
+            Engineering High-Performance <br>
+            <span class="gradient-text">Websites &amp; Bespoke Software</span>
+          </h1>
+          <p class="hero-desc">
+            We partner with businesses, startups, and founders to architect lightning-fast websites, scalable cloud software, and immersive digital platforms that turn visitors into paying clients.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary btn-lg btn-glow">
+              <i data-lucide="rocket"></i> Launch Your Project
+            </a>
+            <a href="#work" class="btn btn-secondary btn-lg">
+              <i data-lucide="layout-grid"></i> Explore Portfolio
+            </a>
+          </div>
+
+          <div class="hero-metrics-strip">
+            <div class="metric-item">
+              <i data-lucide="check-circle-2" style="color: #34d399;"></i>
+              <span><strong>40+</strong> Shipped Builds</span>
+            </div>
+            <div class="metric-separator"></div>
+            <div class="metric-item">
+              <i data-lucide="clock" style="color: #38bdf8;"></i>
+              <span><strong>100%</strong> On-Time Delivery</span>
+            </div>
+            <div class="metric-separator"></div>
+            <div class="metric-item">
+              <i data-lucide="zap" style="color: #fbbf24;"></i>
+              <span><strong>&lt;0.8s</strong> Lighthouse Load</span>
+            </div>
+            <div class="metric-separator"></div>
+            <div class="metric-item">
+              <i data-lucide="star" style="color: #f59e0b;"></i>
+              <span><strong>5.0 / 5.0</strong> Client Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================================================================
+             THE SIGNATURE "WEBSITE IN THE WEBSITE" INTERACTIVE 3D BOX
+             =================================================================== -->
+        <div class="showcase-viewport-wrapper" id="showcase-viewport-wrapper">
+          
+          <!-- Project Switcher Tabs -->
+          <div class="project-selector-bar">
+            <button class="project-pill-btn active" data-project="italiano">
+              <span>🍕 Italiano Restaurant &amp; E-Commerce</span>
+              <span class="indicator-badge">Live Client Build</span>
+            </button>
+            <button class="project-pill-btn" data-project="apex-saas">
+              <span>📊 Apex SaaS Cloud Platform</span>
+              <span class="indicator-badge">Web App</span>
+            </button>
+            <button class="project-pill-btn" data-project="novapay">
+              <span>💳 NovaPay FinTech Gateway</span>
+              <span class="indicator-badge">FinTech</span>
+            </button>
+            <button class="project-pill-btn" data-project="luxeliving">
+              <span>🏠 LuxeLiving 3D Spatial Visualizer</span>
+              <span class="indicator-badge">3D WebGL</span>
+            </button>
+          </div>
+
+          <!-- 3D Perspective Browser Hardware Box -->
+          <div class="browser-3d-box tilt-enabled" id="browser-3d-box">
+            <div class="browser-reflection-glare"></div>
+
+            <!-- Browser Chrome Header Bar -->
+            <div class="browser-titlebar">
+              <div class="window-controls">
+                <button class="dot-btn dot-red" title="Reset Viewport" id="reset-viewport-btn"></button>
+                <button class="dot-btn dot-yellow" title="Toggle Compact Mode" id="minimize-viewport-btn"></button>
+                <button class="dot-btn dot-green" title="Full Screen Cinema Mode" id="fullscreen-toggle-btn"></button>
+              </div>
+
+              <!-- Address Omnibar -->
+              <div class="browser-omnibar">
+                <div class="ssl-badge">
+                  <i data-lucide="lock" style="width: 14px; height: 14px;"></i>
+                  <span>HTTPS</span>
+                </div>
+                <div class="url-text-field">
+                  https://<span class="url-host" id="url-host-display">shinde028shruti.github.io</span><span id="url-path-display">/shruti/</span>
+                </div>
+                <div class="omnibar-actions">
+                  <button class="omnibar-action-btn" id="omnibar-reload-btn" title="Reload Live Website">
+                    <i data-lucide="rotate-cw" style="width: 15px; height: 15px;"></i>
+                  </button>
+                  <button class="omnibar-action-btn" id="omnibar-copy-btn" title="Copy Website Link">
+                    <i data-lucide="copy" style="width: 15px; height: 15px;"></i>
+                  </button>
+                  <a href="https://shinde028shruti.github.io/shruti/" target="_blank" rel="noopener noreferrer" class="omnibar-action-btn" id="omnibar-external-btn" title="Open Live Site in New Tab">
+                    <i data-lucide="external-link" style="width: 15px; height: 15px;"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Device Viewport Switcher -->
+              <div class="viewport-device-switcher">
+                <button class="device-btn active" data-device="desktop" title="Desktop Viewport">
+                  <i data-lucide="monitor" style="width: 14px; height: 14px;"></i> Desktop
+                </button>
+                <button class="device-btn" data-device="tablet" title="iPad / Tablet Viewport">
+                  <i data-lucide="tablet" style="width: 14px; height: 14px;"></i> Tablet
+                </button>
+                <button class="device-btn" data-device="mobile" title="iPhone 15 Mobile Viewport">
+                  <i data-lucide="smartphone" style="width: 14px; height: 14px;"></i> Mobile
+                </button>
+              </div>
+            </div>
+
+            <!-- Content Stage: The Website in the Website -->
+            <div class="browser-content-stage" id="browser-content-stage">
+              <!-- Loader Overlay -->
+              <div class="box-loader-overlay hidden" id="box-loader-overlay">
+                <div class="box-spinner"></div>
+                <div class="box-loader-text">Connecting to Live Client Server...</div>
+              </div>
+
+              <!-- Device Frame Container -->
+              <div class="iframe-device-container mode-desktop" id="iframe-device-container">
+                <iframe 
+                  id="live-website-iframe"
+                  class="live-website-iframe"
+                  src="https://shinde028shruti.github.io/shruti/"
+                  title="Shruti Shinde - Live Client Website Showcase"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  sandbox="allow-same-origin allow-scripts allow-forms allow-popups">
+                </iframe>
+              </div>
+            </div>
+
+            <!-- Viewport Bottom Control Bar -->
+            <div class="viewport-bottom-bar">
+              <div class="viewport-info-tag">
+                <span class="live-badge">LIVE INTERACTIVE EMBED</span>
+                <span>• You can scroll, click, and interact directly inside the box</span>
+              </div>
+              <div class="viewport-toolbar-actions">
+                <button class="tilt-toggle-btn active" id="tilt-toggle-btn">
+                  <i data-lucide="rotate-3d" style="width: 14px; height: 14px;"></i> 3D Tilt: On
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SERVICES SECTION (WHAT WE BUILD FOR CLIENTS)
+         ======================================================================= -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i data-lucide="layers"></i> Client Services</div>
+          <h2 class="section-title">Software &amp; Website Creation Capabilities</h2>
+          <p class="section-desc">
+            From sleek promotional websites to mission-critical SaaS architectures, we deliver engineered digital products tailored to your commercial goals.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="globe"></i>
+            </div>
+            <h3 class="service-title">High-Converting Websites</h3>
+            <p class="service-desc">
+              Bespoke, brand-aligned websites built with clean code or Webflow CMS. Optimized for conversion, fast loading speeds, and search engine dominance.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> Webflow CMS &amp; Custom Animations</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> 100% Mobile &amp; Tablet Responsive</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> Technical SEO &amp; Schema Markup</li>
+            </ul>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="cpu"></i>
+            </div>
+            <h3 class="service-title">Custom Software &amp; SaaS</h3>
+            <p class="service-desc">
+              Scalable web applications and enterprise platforms engineered with modern frameworks (React, Next.js, Node.js, Python), secure APIs, and database architecture.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> Multi-tenant SaaS &amp; Auth Systems</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> Real-Time WebSockets &amp; Dashboards</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> RESTful &amp; GraphQL Cloud APIs</li>
+            </ul>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="shopping-bag"></i>
+            </div>
+            <h3 class="service-title">E-Commerce Platforms</h3>
+            <p class="service-desc">
+              Frictionless online shopping experiences with robust inventory management, dynamic cart interactions, and high-security payment gateway integrations.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> Custom Cart &amp; One-Click Checkout</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> Stripe, PayPal &amp; Multi-Currency Support</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> Headless Shopify &amp; Webflow Commerce</li>
+            </ul>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="box"></i>
+            </div>
+            <h3 class="service-title">Interactive 3D Web &amp; WebGL</h3>
+            <p class="service-desc">
+              Cutting-edge 3D product visualizers, interactive spatial canvas, and hardware-accelerated animations using Three.js and WebGL that amaze clients.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> 3D Product &amp; Architectural Viewers</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> Silky 60 FPS Micro-Interactions</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> Shader Materials &amp; Particle Systems</li>
+            </ul>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="palette"></i>
+            </div>
+            <h3 class="service-title">UI/UX Strategy &amp; Design</h3>
+            <p class="service-desc">
+              Clean visual design systems, wireframes, and high-fidelity interactive prototypes designed in Figma to eliminate user friction and maximize retention.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> Scalable Figma Design Systems</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> User Journey &amp; Conversion Optimization</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> WCAG Accessible &amp; Intuitive UX</li>
+            </ul>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <h3 class="service-title">Optimization &amp; Maintenance</h3>
+            <p class="service-desc">
+              Speed audits, security hardening, automated backups, and ongoing engineering support so your website or software never goes down.
+            </p>
+            <ul class="service-features-list">
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> 95+ Google PageSpeed Guarantee</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> Cloud CDN &amp; CI/CD Pipelines</li>
+              <li class="service-feature-item"><i data-lucide="check" style="width: 16px; height: 16px;"></i> 24/7 Security &amp; Uptime Monitoring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         FEATURED CLIENT WORK & PORTFOLIO GALLERY
+         ======================================================================= -->
+    <section id="work">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i data-lucide="briefcase"></i> Selected Works</div>
+          <h2 class="section-title">Client Projects &amp; Case Studies</h2>
+          <p class="section-desc">
+            Explore recent digital solutions we've designed and engineered. Click <strong>"Preview in Live Box"</strong> to test any site in the interactive 3D box above!
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs-wrapper">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="website">Websites &amp; Webflow</button>
+          <button class="filter-btn" data-filter="saas">SaaS &amp; Software</button>
+          <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+          <button class="filter-btn" data-filter="3d">3D WebGL</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="portfolio-grid">
+          
+          <!-- Project 1: Italiano -->
+          <div class="project-card" data-category="website ecommerce">
+            <div class="project-thumb-container">
+              <img src="assets/images/italiano-preview.svg" alt="Italiano Restaurant Website Showcase" class="project-thumb-img">
+              <span class="project-overlay-badge">Hospitality &amp; Dining</span>
+              <span class="project-metric-tag">+320% Online Bookings</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-pill">Webflow CMS</span>
+                <span class="tag-pill">E-Commerce</span>
+                <span class="tag-pill">Custom JS</span>
+                <span class="tag-pill">Responsive Design</span>
+              </div>
+              <h3 class="project-title">Italiano - Gourmet Dining &amp; E-Commerce Webflow</h3>
+              <p class="project-desc">
+                A prestigious culinary digital portal with dynamic menu items, intuitive table reservations, and seamless e-commerce ordering. Designed with sleek Italian aesthetics and responsive micro-animations.
+              </p>
+              <div class="project-actions">
+                <button class="load-in-box-btn" onclick="loadProjectInLiveBox('italiano')">
+                  <i data-lucide="eye"></i> Preview in Live Box
+                </button>
+                <a href="https://shinde028shruti.github.io/shruti/" target="_blank" rel="noopener noreferrer" class="external-link-icon-btn" title="Open Live Site in New Tab">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Apex SaaS -->
+          <div class="project-card" data-category="saas">
+            <div class="project-thumb-container">
+              <img src="assets/images/saas-preview.svg" alt="Apex SaaS Cloud Telemetry Dashboard" class="project-thumb-img">
+              <span class="project-overlay-badge">Cloud DevOps</span>
+              <span class="project-metric-tag">99.99% Reliability</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-pill">React 18</span>
+                <span class="tag-pill">Next.js</span>
+                <span class="tag-pill">TypeScript</span>
+                <span class="tag-pill">WebSockets</span>
+              </div>
+              <h3 class="project-title">Apex SaaS - Enterprise Cloud Telemetry</h3>
+              <p class="project-desc">
+                High-throughput cloud monitoring software capable of tracking 100k+ microservice events per second. Features interactive data charts, alert thresholds, and multi-tenant security.
+              </p>
+              <div class="project-actions">
+                <button class="load-in-box-btn" onclick="loadProjectInLiveBox('apex-saas')">
+                  <i data-lucide="eye"></i> Preview in Live Box
+                </button>
+                <a href="https://shinde028shruti.github.io/shruti/" target="_blank" rel="noopener noreferrer" class="external-link-icon-btn" title="View Architecture Specs">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: NovaPay -->
+          <div class="project-card" data-category="saas ecommerce">
+            <div class="project-thumb-container">
+              <img src="assets/images/novapay-preview.svg" alt="NovaPay FinTech Payment Platform" class="project-thumb-img">
+              <span class="project-overlay-badge">FinTech &amp; Payments</span>
+              <span class="project-metric-tag">$12M+ Processed</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-pill">Full-Stack</span>
+                <span class="tag-pill">Node.js API</span>
+                <span class="tag-pill">Stripe Connect</span>
+                <span class="tag-pill">TailwindCSS</span>
+              </div>
+              <h3 class="project-title">NovaPay - Global Cross-Border Checkout Engine</h3>
+              <p class="project-desc">
+                A seamless payment pipeline engineered with localized checkout screens, multi-currency conversion, fraud detection algorithms, and instant settlement reporting.
+              </p>
+              <div class="project-actions">
+                <button class="load-in-box-btn" onclick="loadProjectInLiveBox('novapay')">
+                  <i data-lucide="eye"></i> Preview in Live Box
+                </button>
+                <a href="https://shinde028shruti.github.io/shruti/" target="_blank" rel="noopener noreferrer" class="external-link-icon-btn" title="Inspect Demo">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: LuxeLiving 3D -->
+          <div class="project-card" data-category="3d website">
+            <div class="project-thumb-container">
+              <img src="assets/images/luxeliving-preview.svg" alt="LuxeLiving 3D Architectural Visualizer" class="project-thumb-img">
+              <span class="project-overlay-badge">Architectural 3D</span>
+              <span class="project-metric-tag">60 FPS WebGL</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-pill">Three.js</span>
+                <span class="tag-pill">WebGL</span>
+                <span class="tag-pill">GLTF Models</span>
+                <span class="tag-pill">GSAP</span>
+              </div>
+              <h3 class="project-title">LuxeLiving - 3D Real Estate Visualizer</h3>
+              <p class="project-desc">
+                Interactive real-time 3D walkthrough allowing property buyers to inspect architectural layouts, toggle luxury interior finishes, and preview sun angles across daylight cycles.
+              </p>
+              <div class="project-actions">
+                <button class="load-in-box-btn" onclick="loadProjectInLiveBox('luxeliving')">
+                  <i data-lucide="eye"></i> Preview in Live Box
+                </button>
+                <a href="https://shinde028shruti.github.io/shruti/" target="_blank" rel="noopener noreferrer" class="external-link-icon-btn" title="View 3D Demo">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Aura Health -->
+          <div class="project-card" data-category="saas">
+            <div class="project-thumb-container">
+              <img src="assets/images/aurahealth-preview.svg" alt="AuraHealth Telemedicine Platform" class="project-thumb-img">
+              <span class="project-overlay-badge">HealthTech</span>
+              <span class="project-metric-tag">HIPAA Compliant</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-pill">FastAPI</span>
+                <span class="tag-pill">PostgreSQL</span>
+                <span class="tag-pill">WebRTC Video</span>
+                <span class="tag-pill">Next.js</span>
+              </div>
+              <h3 class="project-title">AuraHealth - Clinical Telemedicine Suite</h3>
+              <p class="project-desc">
+                An end-to-end healthcare portal integrating real-time HD video appointments, encrypted patient EHR records, digital prescriptions, and automated appointment reminders.
+              </p>
+              <div class="project-actions">
+                <button class="load-in-box-btn" onclick="loadProjectInLiveBox('apex-saas')">
+                  <i data-lucide="eye"></i> Preview in Live Box
+                </button>
+                <a href="https://shinde028shruti.github.io/shruti/" target="_blank" rel="noopener noreferrer" class="external-link-icon-btn">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Pulse Commerce -->
+          <div class="project-card" data-category="ecommerce website">
+            <div class="project-thumb-container">
+              <img src="assets/images/pulse-preview.svg" alt="Pulse Commerce Headless Storefront" class="project-thumb-img">
+              <span class="project-overlay-badge">Headless Commerce</span>
+              <span class="project-metric-tag">0.5s Page Transitions</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag-pill">Shopify Plus</span>
+                <span class="tag-pill">Next.js 14</span>
+                <span class="tag-pill">Algolia Search</span>
+                <span class="tag-pill">Edge CDN</span>
+              </div>
+              <h3 class="project-title">Pulse - Sub-Second Headless Storefront</h3>
+              <p class="project-desc">
+                Ultra-fast fashion &amp; lifestyle e-commerce portal powered by headless Shopify GraphQL APIs, instantaneous client-side navigation, and algorithmic search suggestions.
+              </p>
+              <div class="project-actions">
+                <button class="load-in-box-btn" onclick="loadProjectInLiveBox('italiano')">
+                  <i data-lucide="eye"></i> Preview in Live Box
+                </button>
+                <a href="https://shinde028shruti.github.io/shruti/" target="_blank" rel="noopener noreferrer" class="external-link-icon-btn">
+                  <i data-lucide="external-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         INTERACTIVE PROJECT ESTIMATOR & TIMELINE CALCULATOR
+         ======================================================================= -->
+    <section id="estimator">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i data-lucide="calculator"></i> Transparent Pricing</div>
+          <h2 class="section-title">Interactive Project Scope &amp; Cost Calculator</h2>
+          <p class="section-desc">
+            Get an instant estimate for your software or website project based on your desired features and timeline.
+          </p>
+        </div>
+
+        <div class="estimator-wrapper">
+          <!-- Estimator Inputs -->
+          <div class="estimator-controls">
+            
+            <!-- Step 1: Project Type -->
+            <div class="estimator-step-group">
+              <div class="estimator-label">
+                <i data-lucide="layout" style="color: #38bdf8; width: 18px; height: 18px;"></i>
+                1. Select Project Category
+              </div>
+              <div class="estimator-options-grid">
+                <div class="estimator-choice-card selected" data-group="category" data-value="website">
+                  <span class="choice-title">Bespoke Website / Webflow</span>
+                  <span class="choice-desc">Marketing site, brand showcase, CMS</span>
+                </div>
+                <div class="estimator-choice-card" data-group="category" data-value="saas">
+                  <span class="choice-title">Custom SaaS / Web Application</span>
+                  <span class="choice-desc">Dashboards, portals, cloud software</span>
+                </div>
+                <div class="estimator-choice-card" data-group="category" data-value="ecommerce">
+                  <span class="choice-title">E-Commerce Storefront</span>
+                  <span class="choice-desc">Online store, checkout, catalog</span>
+                </div>
+                <div class="estimator-choice-card" data-group="category" data-value="3dweb">
+                  <span class="choice-title">Interactive 3D WebGL</span>
+                  <span class="choice-desc">Three.js 3D models, configurators</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Scope Scale -->
+            <div class="estimator-step-group">
+              <div class="estimator-label">
+                <i data-lucide="maximize" style="color: #6366f1; width: 18px; height: 18px;"></i>
+                2. Project Scale &amp; Scope
+              </div>
+              <div class="estimator-options-grid">
+                <div class="estimator-choice-card" data-group="scope" data-value="mvp">
+                  <span class="choice-title">Starter / MVP (1-5 Pages)</span>
+                  <span class="choice-desc">Essential core pages &amp; rapid launch</span>
+                </div>
+                <div class="estimator-choice-card selected" data-group="scope" data-value="pro">
+                  <span class="choice-title">Growth / Professional (6-15 Pages)</span>
+                  <span class="choice-desc">Comprehensive system, CMS, &amp; animations</span>
+                </div>
+                <div class="estimator-choice-card" data-group="scope" data-value="enterprise">
+                  <span class="choice-title">Enterprise Scale (16+ Pages)</span>
+                  <span class="choice-desc">Multi-section, deep integrations, high volume</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Optional Feature Add-ons -->
+            <div class="estimator-step-group">
+              <div class="estimator-label">
+                <i data-lucide="plus-circle" style="color: #10b981; width: 18px; height: 18px;"></i>
+                3. Desired Capabilities &amp; Features
+              </div>
+              <div class="features-checkbox-grid">
+                <label class="feature-checkbox-label">
+                  <input type="checkbox" class="feature-addon-checkbox" value="cms" checked>
+                  <span>CMS &amp; Visual Content Editor</span>
+                </label>
+                <label class="feature-checkbox-label">
+                  <input type="checkbox" class="feature-addon-checkbox" value="auth">
+                  <span>User Login, Auth &amp; Roles</span>
+                </label>
+                <label class="feature-checkbox-label">
+                  <input type="checkbox" class="feature-addon-checkbox" value="payments">
+                  <span>Stripe / Multi-Currency Cart</span>
+                </label>
+                <label class="feature-checkbox-label">
+                  <input type="checkbox" class="feature-addon-checkbox" value="threed">
+                  <span>Three.js 3D WebGL Canvas</span>
+                </label>
+                <label class="feature-checkbox-label">
+                  <input type="checkbox" class="feature-addon-checkbox" value="i18n">
+                  <span>Multi-Language Translation</span>
+                </label>
+                <label class="feature-checkbox-label">
+                  <input type="checkbox" class="feature-addon-checkbox" value="api">
+                  <span>Third-Party API Integrations</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 4: Timeline Priority -->
+            <div class="estimator-step-group">
+              <div class="estimator-label">
+                <i data-lucide="zap" style="color: #f59e0b; width: 18px; height: 18px;"></i>
+                4. Delivery Velocity
+              </div>
+              <div class="estimator-options-grid">
+                <div class="estimator-choice-card selected" data-group="speed" data-value="standard">
+                  <span class="choice-title">Standard Timeline</span>
+                  <span class="choice-desc">Thorough phased sprints</span>
+                </div>
+                <div class="estimator-choice-card" data-group="speed" data-value="express">
+                  <span class="choice-title">Express Priority Delivery</span>
+                  <span class="choice-desc">Accelerated turnaround (dedication)</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Estimator Output Card -->
+          <div class="estimator-summary-box">
+            <div class="summary-header">
+              <h3 class="summary-title">Project Scope Estimate</h3>
+              <p class="summary-subtitle">Real-time approximate investment &amp; timeline</p>
+            </div>
+
+            <div class="estimate-output-metric">
+              <div class="output-label">Estimated Investment</div>
+              <div class="output-value" id="estimate-price-display">$2,300 - $2,760</div>
+            </div>
+
+            <div class="estimate-output-metric">
+              <div class="output-label">Estimated Delivery Timeframe</div>
+              <div class="output-value" id="estimate-timeline-display" style="color: #34d399; font-size: 1.5rem;">3 - 4 Weeks</div>
+            </div>
+
+            <ul class="summary-included-items">
+              <li><i data-lucide="check" style="width: 14px; height: 14px;"></i> 100% Full Source Code Ownership</li>
+              <li><i data-lucide="check" style="width: 14px; height: 14px;"></i> Responsive Across All Screens</li>
+              <li><i data-lucide="check" style="width: 14px; height: 14px;"></i> 30-Day Post-Launch Warranty</li>
+              <li><i data-lucide="check" style="width: 14px; height: 14px;"></i> SEO &amp; Performance Audit Included</li>
+            </ul>
+
+            <button class="btn btn-primary btn-lg btn-glow" id="apply-estimate-to-form-btn" style="width: 100%;">
+              <i data-lucide="arrow-down-circle"></i> Book This Configuration
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         DEVELOPMENT PROCESS (4 PROVEN CLIENT STEPS)
+         ======================================================================= -->
+    <section id="process">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i data-lucide="git-branch"></i> How We Work</div>
+          <h2 class="section-title">A Proven 4-Step Engineering Process</h2>
+          <p class="section-desc">
+            We follow a streamlined, client-friendly methodology to ensure total transparency, speed, and pixel-perfect results from Day 1 to Launch.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-step-num">01</div>
+            <h3 class="process-title">Strategic Discovery</h3>
+            <p class="process-desc">
+              We define your business goals, target audience, brand identity, technical stack requirements, and establish measurable milestone targets.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">02</div>
+            <h3 class="process-title">UI/UX &amp; Prototyping</h3>
+            <p class="process-desc">
+              We design high-fidelity interactive wireframes and design systems in Figma. You get to test and approve the look, feel, and flow before coding starts.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">03</div>
+            <h3 class="process-title">Modular Engineering</h3>
+            <p class="process-desc">
+              We write clean, modular, maintainable code with modern frameworks, animations, and security protocols. You receive weekly staging preview links.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">04</div>
+            <h3 class="process-title">QA, SEO &amp; Launch</h3>
+            <p class="process-desc">
+              Rigorous cross-browser testing, accessibility checks, Google PageSpeed tuning, and continuous deployment setup with 30-day post-launch support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         TECH STACK MATRIX
+         ======================================================================= -->
+    <section id="tech">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i data-lucide="code-2"></i> Technologies</div>
+          <h2 class="section-title">Our Technical Arsenal</h2>
+          <p class="section-desc">
+            Built on robust, industry-standard modern software stacks that guarantee longevity, speed, and scale.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-item-card">
+            <i data-lucide="layout" style="color: #38bdf8; width: 32px; height: 32px;"></i>
+            <span class="tech-name">Webflow CMS</span>
+            <span class="tech-category-pill">CMS &amp; Sites</span>
+          </div>
+
+          <div class="tech-item-card">
+            <i data-lucide="atom" style="color: #61dafb; width: 32px; height: 32px;"></i>
+            <span class="tech-name">React / Next.js</span>
+            <span class="tech-category-pill">Frontend</span>
+          </div>
+
+          <div class="tech-item-card">
+            <i data-lucide="box" style="color: #a855f7; width: 32px; height: 32px;"></i>
+            <span class="tech-name">Three.js / WebGL</span>
+            <span class="tech-category-pill">3D Graphics</span>
+          </div>
+
+          <div class="tech-item-card">
+            <i data-lucide="file-code" style="color: #3178c6; width: 32px; height: 32px;"></i>
+            <span class="tech-name">TypeScript</span>
+            <span class="tech-category-pill">Language</span>
+          </div>
+
+          <div class="tech-item-card">
+            <i data-lucide="server" style="color: #22c55e; width: 32px; height: 32px;"></i>
+            <span class="tech-name">Node.js</span>
+            <span class="tech-category-pill">Backend</span>
+          </div>
+
+          <div class="tech-item-card">
+            <i data-lucide="terminal" style="color: #f59e0b; width: 32px; height: 32px;"></i>
+            <span class="tech-name">Python / FastAPI</span>
+            <span class="tech-category-pill">APIs &amp; Data</span>
+          </div>
+
+          <div class="tech-item-card">
+            <i data-lucide="wind" style="color: #38bdf8; width: 32px; height: 32px;"></i>
+            <span class="tech-name">TailwindCSS</span>
+            <span class="tech-category-pill">Styling</span>
+          </div>
+
+          <div class="tech-item-card">
+            <i data-lucide="database" style="color: #336791; width: 32px; height: 32px;"></i>
+            <span class="tech-name">PostgreSQL</span>
+            <span class="tech-category-pill">Database</span>
+          </div>
+
+          <div class="tech-item-card">
+            <i data-lucide="credit-card" style="color: #6366f1; width: 32px; height: 32px;"></i>
+            <span class="tech-name">Stripe &amp; Carts</span>
+            <span class="tech-category-pill">E-Commerce</span>
+          </div>
+
+          <div class="tech-item-card">
+            <i data-lucide="cloud" style="color: #0ea5e9; width: 32px; height: 32px;"></i>
+            <span class="tech-name">AWS / Vercel</span>
+            <span class="tech-category-pill">Cloud Host</span>
+          </div>
+
+          <div class="tech-item-card">
+            <i data-lucide="pen-tool" style="color: #ec4899; width: 32px; height: 32px;"></i>
+            <span class="tech-name">Figma</span>
+            <span class="tech-category-pill">UI/UX Design</span>
+          </div>
+
+          <div class="tech-item-card">
+            <i data-lucide="git-branch" style="color: #f43f5e; width: 32px; height: 32px;"></i>
+            <span class="tech-name">Git &amp; CI/CD</span>
+            <span class="tech-category-pill">DevOps</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CLIENT TESTIMONIALS & TRUST PILLARS
+         ======================================================================= -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i data-lucide="star"></i> Client Satisfaction</div>
+          <h2 class="section-title">Trusted by Business Owners &amp; Founders</h2>
+          <p class="section-desc">
+            Here's what clients say about working with us on their websites and software applications.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div>
+              <div class="stars-row">
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+              </div>
+              <p class="testimonial-quote">
+                "Shruti transformed our restaurant’s digital presence with the Italiano website build. Online table reservations skyrocketed by over 300% in the first two months. Her attention to detail, animations, and speed are unmatched."
+              </p>
+            </div>
+            <div class="client-profile">
+              <div class="client-avatar-badge">MR</div>
+              <div>
+                <div class="client-name">Marco Rossi</div>
+                <div class="client-role">Founder, Italiano Hospitality Group</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="stars-row">
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+              </div>
+              <p class="testimonial-quote">
+                "Working with Shruti on our SaaS analytics dashboard was effortless. She wrote clean, modular code that our internal engineering team was able to extend seamlessly. Delivered 5 days ahead of schedule!"
+              </p>
+            </div>
+            <div class="client-profile">
+              <div class="client-avatar-badge" style="background: linear-gradient(135deg, #10b981, #06b6d4);">EL</div>
+              <div>
+                <div class="client-name">Elena Lin</div>
+                <div class="client-role">VP of Product, CloudTech Solutions</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="stars-row">
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+                <i data-lucide="star" style="fill: #f59e0b; width: 18px; height: 18px;"></i>
+              </div>
+              <p class="testimonial-quote">
+                "The 3D interactive product visualizer blew our clients away. Shruti’s understanding of WebGL and performance optimization ensured silky smooth frame rates even on mobile phones."
+              </p>
+            </div>
+            <div class="client-profile">
+              <div class="client-avatar-badge" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);">DK</div>
+              <div>
+                <div class="client-name">David Kumar</div>
+                <div class="client-role">Creative Director, LuxeLiving Studio</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CONTACT & PROJECT INQUIRY SECTION
+         ======================================================================= -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i data-lucide="message-square"></i> Let's Collaborate</div>
+          <h2 class="section-title">Ready to Build Your Next Software or Website?</h2>
+          <p class="section-desc">
+            Tell us about your project goals. We will review your requirements and provide a detailed architectural roadmap and timeline within 24 hours.
+          </p>
+        </div>
+
+        <div class="contact-container-grid">
+          <!-- Contact Info -->
+          <div class="contact-info-card">
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div>
+                <div class="channel-label">Direct Email</div>
+                <a href="mailto:shinde028shruti@gmail.com" class="channel-value">shinde028shruti@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <i data-lucide="github"></i>
+              </div>
+              <div>
+                <div class="channel-label">GitHub Repository</div>
+                <a href="https://github.com/shinde028shruti" target="_blank" rel="noopener noreferrer" class="channel-value">github.com/shinde028shruti</a>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <i data-lucide="globe"></i>
+              </div>
+              <div>
+                <div class="channel-label">Live Showcase Project</div>
+                <a href="https://shinde028shruti.github.io/shruti/" target="_blank" rel="noopener noreferrer" class="channel-value">shinde028shruti.github.io/shruti</a>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <i data-lucide="clock"></i>
+              </div>
+              <div>
+                <div class="channel-label">Availability Status</div>
+                <div style="color: #34d399; font-weight: 700; display: flex; align-items: center; gap: 6px; margin-top: 4px;">
+                  <span style="width: 8px; height: 8px; background: #34d399; border-radius: 50%;"></span>
+                  Accepting Client Projects for Q2/Q3 2026
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Form -->
+          <div class="contact-form-card">
+            <form class="contact-form" id="project-contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-name">Your Full Name *</label>
+                  <input type="text" id="form-name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-email">Work Email *</label>
+                  <input type="email" id="form-email" class="form-input" placeholder="sarah@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-project-type">Project Type</label>
+                  <select id="form-project-type" class="form-select">
+                    <option value="website">High-Converting Website / Webflow</option>
+                    <option value="saas">Custom Software / SaaS Web Application</option>
+                    <option value="ecommerce">E-Commerce Platform / Store</option>
+                    <option value="3dweb">Interactive 3D WebGL Experience</option>
+                    <option value="redesign">Website Redesign &amp; Optimization</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-budget-range">Approximate Budget</label>
+                  <select id="form-budget-range" class="form-select">
+                    <option value="1k-3k">$1,000 - $3,000</option>
+                    <option value="3k-6k" selected>$3,000 - $6,000</option>
+                    <option value="6k-plus">$6,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message">Project Details &amp; Objectives *</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Tell us about what you want to build, target launch dates, and reference websites..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-glow" style="width: 100%;">
+                <i data-lucide="send"></i> Send Project Proposal Request
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       FULLSCREEN CINEMA PRESENTATION MODAL FOR THE LIVE BOX
+       ======================================================================= -->
+  <div class="fullscreen-modal-backdrop" id="fullscreen-modal-backdrop">
+    <div class="modal-header-bar">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span class="live-badge">FULLSCREEN CINEMA VIEW</span>
+        <span id="modal-url-display" style="font-family: var(--font-mono); font-size: 0.85rem; color: #94a3b8;">https://shinde028shruti.github.io/shruti/</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="https://shinde028shruti.github.io/shruti/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="modal-external-btn">
+          <i data-lucide="external-link" style="width: 14px; height: 14px;"></i> Open in New Tab
+        </a>
+        <button class="modal-close-btn" id="modal-close-btn" title="Close Fullscreen (Esc)">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+    </div>
+    <div class="modal-iframe-container">
+      <iframe id="modal-live-iframe" style="width: 100%; height: 100%; border: none;" src="about:blank" title="Fullscreen Client Website View"></iframe>
+    </div>
+  </div>
+
+  <!-- Toast Notification Element -->
+  <div class="toast-notice" id="toast-notice">
+    <i data-lucide="check-circle" style="color: #38bdf8; width: 20px; height: 20px;"></i>
+    <span class="toast-message">Notification message</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="brand-logo">
+          <div class="brand-icon-box">SS</div>
+          <div class="brand-text">
+            <span class="brand-title">Shruti Shinde</span>
+            <span class="brand-subtitle">Software &amp; Web Studio</span>
+          </div>
+        </a>
+
+        <div class="footer-social-links">
+          <a href="https://github.com/shinde028shruti" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="GitHub">
+            <i data-lucide="github" style="width: 18px; height: 18px;"></i>
+          </a>
+          <a href="mailto:shinde028shruti@gmail.com" class="social-circle-link" title="Email">
+            <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+          </a>
+          <a href="https://shinde028shruti.github.io/shruti/" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="Live Site">
+            <i data-lucide="external-link" style="width: 18px; height: 18px;"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Shruti Shinde. All rights reserved. Designed &amp; engineered for software and website creation.</div>
+        <div style="display: flex; gap: 20px;">
+          <span>🟢 System Status: All Services Operational</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Scripts -->
+  <script src="js/three-background.js"></script>
+  <script src="js/website-box.js"></script>
+  <script src="js/project-estimator.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pulse-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1026"/>
+      <stop offset="50%" stop-color="#3b1347"/>
+      <stop offset="100%" stop-color="#120617"/>
+    </linearGradient>
+    <linearGradient id="pink-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#pulse-bg)"/>
+
+  <!-- Shopping Bag / Cart graphic -->
+  <g transform="translate(400, 190)" text-anchor="middle">
+    <rect x="-70" y="-50" width="140" height="150" rx="18" fill="rgba(244, 63, 94, 0.2)" stroke="#f43f5e" stroke-width="3"/>
+    <path d="M-35 -50 C-35 -90 35 -90 35 -50" fill="none" stroke="#f43f5e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="0" cy="25" r="14" fill="#fb7185"/>
+  </g>
+
+  <text x="400" y="380" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle">PULSE COMMERCE HEADLESS</text>
+  <text x="400" y="410" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="500" fill="#fb7185" text-anchor="middle">SUB-SECOND HEADLESS SHOPIFY &amp; NEXT.JS STOREFRONT</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="luxe-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="50%" stop-color="#2a1f49"/>
+      <stop offset="100%" stop-color="#0f0c1a"/>
+    </linearGradient>
+    <linearGradient id="purple-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#luxe-bg)"/>
+
+  <!-- 3D Geometric Isometric Wireframe Cube -->
+  <g transform="translate(400, 180)">
+    <!-- Top Face -->
+    <polygon points="0,-70 120,-10 0,50 -120,-10" fill="rgba(192, 132, 252, 0.25)" stroke="#c084fc" stroke-width="2"/>
+    <!-- Left Face -->
+    <polygon points="-120,-10 0,50 0,160 -120,100" fill="rgba(124, 58, 237, 0.4)" stroke="#c084fc" stroke-width="2"/>
+    <!-- Right Face -->
+    <polygon points="0,50 120,-10 120,100 0,160" fill="rgba(99, 102, 241, 0.3)" stroke="#c084fc" stroke-width="2"/>
+    
+    <circle cx="0" cy="50" r="6" fill="#ffffff"/>
+  </g>
+
+  <text x="400" y="380" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle">LUXELIVING 3D SPATIAL</text>
+  <text x="400" y="410" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="500" fill="#c084fc" text-anchor="middle">THREE.JS / WEBGL ARCHITECTURAL CONFIGURATOR</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="saas-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="50%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#0a1128"/>
+    </linearGradient>
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#saas-bg)"/>
+
+  <!-- Simulated Dashboard Cards -->
+  <rect x="80" y="80" width="640" height="290" rx="16" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5"/>
+  
+  <!-- Mini Bar Chart -->
+  <g transform="translate(130, 240)">
+    <rect x="0" y="-80" width="28" height="80" rx="4" fill="url(#cyan-grad)" opacity="0.6"/>
+    <rect x="42" y="-120" width="28" height="120" rx="4" fill="url(#cyan-grad)" opacity="0.8"/>
+    <rect x="84" y="-150" width="28" height="150" rx="4" fill="url(#cyan-grad)"/>
+    <rect x="126" y="-95" width="28" height="95" rx="4" fill="url(#cyan-grad)" opacity="0.7"/>
+    <rect x="168" y="-170" width="28" height="170" rx="4" fill="url(#cyan-grad)"/>
+    <rect x="210" y="-140" width="28" height="140" rx="4" fill="url(#cyan-grad)" opacity="0.85"/>
+  </g>
+
+  <!-- Metric Widget -->
+  <g transform="translate(430, 130)">
+    <rect x="0" y="0" width="240" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#94a3b8">CLOUD LATENCY</text>
+    <text x="20" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#38bdf8">14.2 ms</text>
+  </g>
+
+  <g transform="translate(430, 240)">
+    <rect x="0" y="0" width="240" height="90" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#94a3b8">UPTIME ACCURACY</text>
+    <text x="20" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="800" fill="#10b981">99.99%</text>
+  </g>
+
+  <!-- Title Overlay -->
+  <text x="400" y="415" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">APEX CLOUD TELEMETRY PLATFORM</text>
+</svg>

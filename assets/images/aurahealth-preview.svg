@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aura-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="50%" stop-color="#0f2b48"/>
+      <stop offset="100%" stop-color="#071324"/>
+    </linearGradient>
+    <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#aura-bg)"/>
+
+  <!-- Pulse EKG Line Graphic -->
+  <g transform="translate(150, 200)">
+    <path d="M0 0 L140 0 L160 -40 L180 60 L200 -70 L220 50 L240 -20 L260 0 L500 0" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="200" cy="-70" r="8" fill="#38bdf8" filter="drop-shadow(0 0 10px #38bdf8)"/>
+  </g>
+
+  <text x="400" y="380" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle">AURA HEALTH TELEMEDICINE</text>
+  <text x="400" y="410" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="500" fill="#38bdf8" text-anchor="middle">HIPAA-COMPLIANT CLINICAL WORKFLOW &amp; APPOINTMENTS</text>
+</svg>
